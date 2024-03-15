@@ -200,7 +200,7 @@ export default function Product() {
   const products = useSelector(selectAllProducts);
   const [filter, setFilter] = useState({});
   const [sort, setSort] = useState({});
-
+  const [page,setPage] = useState(1);
   const handleFilter = (e, section, option) => {
     console.log(section.id);
 
@@ -217,17 +217,17 @@ export default function Product() {
       const index = newFilter[section.id].findIndex(
         (el) => el === option.value
       );
-      [section.id].splice(index, 1);
+      newFilter[section.id].splice(index, 1);
     }
 
-    console.log({newFilter})
+    console.log({ newFilter });
 
     setFilter(newFilter);
   };
 
   const handleSort = (e, option) => {
     const sort = { ...filter, _sort: option.sort, _order: option.order };
-    console.log({sort})
+    console.log({ sort });
     setSort(sort);
   };
 
