@@ -8,7 +8,7 @@ export function fetchAllProducts() {
   });
 }
 
-export function fetchProductsByFilters(filter,sort,pagination) {
+export function fetchProductsByFilters(filter, sort, pagination) {
   // filter = {"category":["smartphone","laptops"]}
   // sort = {_sort:"price",_order="desc"}
   // pagination =  {_page:1,_limit="10"}            //  _page=1&_limit=10
@@ -23,11 +23,12 @@ export function fetchProductsByFilters(filter,sort,pagination) {
   }
 
   for (let key in sort) {
-    queryString += `${key}=${sort[key]}`;
+    queryString += `${key}=${sort[key]}&`;
   }
 
+  console.log(pagination);
   for (let key in pagination) {
-    queryString += `${key}=${pagination[key]}`;
+    queryString += `${key}=${pagination[key]}&`;
   }
 
   return new Promise(async (resolve) => {
@@ -36,6 +37,9 @@ export function fetchProductsByFilters(filter,sort,pagination) {
       "http://localhost:8080/products?" + queryString
     );
     const data = response.json();
+    const total = await response.headers.get("X-Total-Count");
+
+    console.log(total)
     resolve({ data });
   });
 }
