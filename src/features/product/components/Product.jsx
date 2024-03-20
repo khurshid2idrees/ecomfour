@@ -401,13 +401,13 @@ function Pagination({ page, setPage, handlePage, totalItems = 55 }) {
     <>
       <div className="flex flex-1 justify-between sm:hidden">
         <div
-          onClick={(e)=>handlePage(page-1)}
+          onClick={(e) => handlePage(page - 1)}
           className="relative inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50"
         >
           Previous
         </div>
         <div
-          onClick={(e)=>handlePage(page+1)}
+          onClick={(e) => handlePage(page + 1)}
           className="relative ml-3 inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50"
         >
           Next
@@ -430,7 +430,7 @@ function Pagination({ page, setPage, handlePage, totalItems = 55 }) {
             aria-label="Pagination"
           >
             <div
-              onClick={(e)=>handlePage(page-1)}
+              onClick={(e) => handlePage(page - 1)}
               className="relative inline-flex items-center rounded-l-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0"
             >
               <span className="sr-only">Previous</span>
@@ -475,9 +475,9 @@ function ProductGrid({ products }) {
         <div className="mx-auto max-w-2xl px-4 py-0 sm:px-6 sm:py-0 lg:max-w-7xl lg:px-8">
           <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
             {products.map((product) => (
-              <Link to={`/product-detail`}>
+              <Link to={`/product-detail/${product.id}`}  key={product.id}>
                 <div
-                  key={product.id}
+                 
                   className="group relative border-solid border-2 p-2 border-gray-200"
                 >
                   <div className="min-h-60 aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-60">
