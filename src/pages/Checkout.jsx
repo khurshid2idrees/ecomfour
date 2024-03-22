@@ -1,6 +1,5 @@
 import React, { Fragment, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { increment, incrementAsync } from "../features/cart/cartSlice";
 import { Dialog, Transition } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import { Link } from "react-router-dom";
@@ -53,7 +52,6 @@ const addresses = [
 ];
 
 export default function Checkout() {
-  const count = useSelector(incrementAsync);
   const dispatch = useDispatch();
 
   return (
