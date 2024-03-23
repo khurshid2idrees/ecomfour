@@ -2,14 +2,10 @@ import { useEffect, useState } from "react";
 import { StarIcon } from "@heroicons/react/20/solid";
 import { RadioGroup } from "@headlessui/react";
 import { useDispatch, useSelector } from "react-redux";
-import {
-  selectProductById,
-  fetchProductByIdAsync,
-} from "../productSlice";
+import { selectProductById, fetchProductByIdAsync } from "../productSlice";
 import { useParams } from "react-router-dom";
 import { addToCartAsync } from "../../cart/cartSlice";
-import {selectLoggedInUser} from '../../auth/authSlice';
-
+import { selectLoggedInUser } from "../../auth/authSlice";
 
 // TODO: In server data we will add colors, sizes, hightlights. to each product
 
@@ -39,7 +35,6 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-
 export default function ProductDetails() {
   const [selectedColor, setSelectedColor] = useState(colors[0]);
   const [selectedSize, setSelectedSize] = useState(sizes[2]);
@@ -48,10 +43,12 @@ export default function ProductDetails() {
   const params = useParams();
   const dispatch = useDispatch();
 
-  const handleCart = (e)=>{
+  const handleCart = (e) => {
     e.preventDefault();
-     dispatch(addToCartAsync({...product,quantity:1,user:user.id}));
-  }
+    let newItem = { ...product, quantity: 1, user: user.id };
+    delete newItem["id"];
+    dispatch(addToCartAsync(newItem));
+  };
 
   useEffect(() => {
     dispatch(fetchProductByIdAsync(params.id));
@@ -298,7 +295,7 @@ export default function ProductDetails() {
                 </div>
 
                 <button
-                onClick={handleCart}
+                  onClick={handleCart}
                   type="submit"
                   className="mt-10 flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                 >
@@ -326,12 +323,11 @@ export default function ProductDetails() {
 
                 <div className="mt-4">
                   <ul role="list" className="list-disc space-y-2 pl-4 text-sm">
-                    {
-                      highlights.map((highlight) => (
-                        <li key={highlight} className="text-gray-400">
-                          <span className="text-gray-600">{highlight}</span>
-                        </li>
-                      ))}
+                    {highlights.map((highlight) => (
+                      <li key={highlight} className="text-gray-400">
+                        <span className="text-gray-600">{highlight}</span>
+                      </li>
+                    ))}
                   </ul>
                 </div>
               </div>
