@@ -2524,6 +2524,61 @@
         "pinCode": "110048"
       },
       "status": "pending"
+    },
+    {
+      "id": "52ea",
+      "items": [
+        {
+          "id": "81bc",
+          "title": "Samsung Galaxy Book",
+          "description": "Samsung Galaxy Book S (2020) Laptop With Intel Lakefield Chip, 8GB of RAM Launched",
+          "price": 1499,
+          "discountPercentage": 4.15,
+          "rating": 4.25,
+          "stock": 50,
+          "brand": "Samsung",
+          "category": "laptops",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/7/thumbnail.jpg",
+          "images": [
+            "https://cdn.dummyjson.com/product-images/7/1.jpg",
+            "https://cdn.dummyjson.com/product-images/7/2.jpg",
+            "https://cdn.dummyjson.com/product-images/7/3.jpg",
+            "https://cdn.dummyjson.com/product-images/7/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": "edf4"
+        }
+      ],
+      "totalAmount": 1499,
+      "totalItems": 1,
+      "user": {
+        "id": "edf4",
+        "email": "harry@gmail.com",
+        "password": "Samosa@123#",
+        "addresses": [
+          {
+            "name": "test",
+            "email": "test@test.com",
+            "phone": "1234567890",
+            "street": "mohan garden ",
+            "city": "new delhi",
+            "state": "delhi",
+            "pinCode": "110059"
+          },
+          {
+            "name": "kd",
+            "email": "kd@kd.com",
+            "phone": "23874927384",
+            "street": "kd address",
+            "city": "delhi",
+            "state": "delhi",
+            "pinCode": "110048"
+          }
+        ]
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": null,
+      "status": "pending"
     }
   ]
 }
