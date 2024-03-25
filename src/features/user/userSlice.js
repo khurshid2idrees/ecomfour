@@ -35,7 +35,7 @@ export const fetchLoggedInUserAsync = createAsyncThunk(
   }
 );
 
-export const counterSlice = createSlice({
+export const userSlice = createSlice({
   name: "user",
   initialState,
   reducers: {
@@ -73,4 +73,4 @@ export const counterSlice = createSlice({
 export const selectUserOrders = (state) => state.user.userOrders;
 export const selectUserInfo = (state) => state.user.userInfo;
 
-export default counterSlice.reducer;
+export default userSlice.reducer;
