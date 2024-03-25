@@ -2439,22 +2439,22 @@
       "password": "Samosa@123#",
       "addresses": [
         {
-          "name": "test",
-          "email": "test@test.com",
-          "phone": "1234567890",
-          "street": "mohan garden ",
+          "name": "mr cash new",
+          "email": "cash@gmail.com",
           "city": "new delhi",
           "state": "delhi",
-          "pinCode": "110059"
+          "pinCode": "2837423",
+          "phone": "3987249748",
+          "street": "this is a cash street "
         },
         {
-          "name": "kd",
-          "email": "kd@kd.com",
-          "phone": "23874927384",
-          "street": "kd address",
-          "city": "delhi",
-          "state": "delhi",
-          "pinCode": "110048"
+          "name": "user 3",
+          "email": "user@gmil.com",
+          "city": "banglore ",
+          "state": "banglore ",
+          "pinCode": "2389423",
+          "phone": "23987423",
+          "street": "user "
         }
       ]
     }
@@ -2577,6 +2577,337 @@
         ]
       },
       "paymentMethod": "cash",
+      "selectedAddress": null,
+      "status": "pending"
+    },
+    {
+      "id": "7139",
+      "items": [
+        {
+          "id": "8643",
+          "title": "Huawei P30",
+          "description": "Huawei’s re-badged P30 Pro New Edition was officially unveiled yesterday in Germany and now the device has made its way to the UK.",
+          "price": 499,
+          "discountPercentage": 10.58,
+          "rating": 4.09,
+          "stock": 32,
+          "brand": "Huawei",
+          "category": "smartphones",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/5/thumbnail.jpg",
+          "images": [
+            "https://cdn.dummyjson.com/product-images/5/1.jpg",
+            "https://cdn.dummyjson.com/product-images/5/2.jpg",
+            "https://cdn.dummyjson.com/product-images/5/3.jpg"
+          ],
+          "quantity": 1,
+          "user": "edf4"
+        }
+      ],
+      "totalAmount": 499,
+      "totalItems": 1,
+      "user": {
+        "id": "edf4",
+        "email": "harry@gmail.com",
+        "password": "Samosa@123#",
+        "addresses": [
+          {
+            "name": "test",
+            "email": "test@test.com",
+            "phone": "1234567890",
+            "street": "mohan garden ",
+            "city": "new delhi",
+            "state": "delhi",
+            "pinCode": "110059"
+          },
+          {
+            "name": "kd",
+            "email": "kd@kd.com",
+            "phone": "23874927384",
+            "street": "kd address",
+            "city": "delhi",
+            "state": "delhi",
+            "pinCode": "110048"
+          }
+        ]
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "test",
+        "email": "test@test.com",
+        "phone": "1234567890",
+        "street": "mohan garden ",
+        "city": "new delhi",
+        "state": "delhi",
+        "pinCode": "110059"
+      },
+      "status": "pending"
+    },
+    {
+      "id": "85ed",
+      "items": [
+        {
+          "id": "877c",
+          "title": "Samsung Universe 9",
+          "description": "Samsung's new variant which goes beyond Galaxy to the Universe",
+          "price": 1249,
+          "discountPercentage": 15.46,
+          "rating": 4.09,
+          "stock": 36,
+          "brand": "Samsung",
+          "category": "smartphones",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/3/thumbnail.jpg",
+          "images": [
+            "https://cdn.dummyjson.com/product-images/3/1.jpg"
+          ],
+          "quantity": 1,
+          "user": "edf4"
+        }
+      ],
+      "totalAmount": 1249,
+      "totalItems": 1,
+      "user": {
+        "id": "edf4",
+        "email": "harry@gmail.com",
+        "password": "Samosa@123#",
+        "addresses": [
+          {
+            "name": "mrkhan",
+            "email": "khan@khan.com",
+            "phone": "28374324987",
+            "street": "khanpur ",
+            "city": "new delhi",
+            "state": "new dlehi",
+            "pinCode": "238498"
+          }
+        ]
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": null,
+      "status": "pending"
+    },
+    {
+      "id": "b823",
+      "items": [
+        {
+          "id": "7b22",
+          "title": "MacBook Pro",
+          "description": "MacBook Pro 2021 with mini-LED display may launch between September, November",
+          "price": 1749,
+          "discountPercentage": 11.02,
+          "rating": 4.57,
+          "stock": 83,
+          "brand": "Apple",
+          "category": "laptops",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/6/thumbnail.png",
+          "images": [
+            "https://cdn.dummyjson.com/product-images/6/1.png",
+            "https://cdn.dummyjson.com/product-images/6/2.jpg",
+            "https://cdn.dummyjson.com/product-images/6/3.png",
+            "https://cdn.dummyjson.com/product-images/6/4.jpg"
+          ],
+          "quantity": 1,
+          "user": "edf4"
+        }
+      ],
+      "totalAmount": 1749,
+      "totalItems": 1,
+      "user": {
+        "id": "edf4",
+        "email": "harry@gmail.com",
+        "password": "Samosa@123#",
+        "addresses": [
+          {
+            "name": "test",
+            "email": "test@test.com",
+            "phone": "23648372",
+            "street": "test address ",
+            "city": "new delhi",
+            "state": "delhi",
+            "pinCode": "198287"
+          },
+          {
+            "name": "new",
+            "email": "new@gmail.com",
+            "phone": "23987423",
+            "street": "new address ",
+            "city": "new delhi",
+            "state": "delhi",
+            "pinCode": "932874"
+          }
+        ]
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "new",
+        "email": "new@gmail.com",
+        "phone": "23987423",
+        "street": "new address ",
+        "city": "new delhi",
+        "state": "delhi",
+        "pinCode": "932874"
+      },
+      "status": "pending"
+    },
+    {
+      "id": "416a",
+      "items": [
+        {
+          "id": "970e",
+          "title": "iPhone X",
+          "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+          "price": 899,
+          "discountPercentage": 17.94,
+          "rating": 4.44,
+          "stock": 34,
+          "brand": "Apple",
+          "category": "smartphones",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg",
+          "images": [
+            "https://cdn.dummyjson.com/product-images/2/1.jpg",
+            "https://cdn.dummyjson.com/product-images/2/2.jpg",
+            "https://cdn.dummyjson.com/product-images/2/3.jpg",
+            "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": "edf4"
+        }
+      ],
+      "totalAmount": 899,
+      "totalItems": 1,
+      "user": {
+        "id": "edf4",
+        "email": "harry@gmail.com",
+        "password": "Samosa@123#",
+        "addresses": [
+          {
+            "name": "first user ",
+            "email": "user@user.com",
+            "phone": "29837423",
+            "street": "test",
+            "city": "delhi",
+            "state": "delhi",
+            "pinCode": "198237"
+          },
+          {
+            "name": "user 2 ",
+            "email": "user@jds.com",
+            "phone": "239742389",
+            "street": "saoidhf",
+            "city": "del",
+            "state": "delhi",
+            "pinCode": "298374"
+          }
+        ]
+      },
+      "paymentMethod": "card",
+      "selectedAddress": {
+        "name": "first user ",
+        "email": "user@user.com",
+        "phone": "29837423",
+        "street": "test",
+        "city": "delhi",
+        "state": "delhi",
+        "pinCode": "198237"
+      },
+      "status": "pending"
+    },
+    {
+      "id": "0b54",
+      "items": [
+        {
+          "id": "d52f",
+          "title": "iPhone X",
+          "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+          "price": 899,
+          "discountPercentage": 17.94,
+          "rating": 4.44,
+          "stock": 34,
+          "brand": "Apple",
+          "category": "smartphones",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg",
+          "images": [
+            "https://cdn.dummyjson.com/product-images/2/1.jpg",
+            "https://cdn.dummyjson.com/product-images/2/2.jpg",
+            "https://cdn.dummyjson.com/product-images/2/3.jpg",
+            "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": "edf4"
+        }
+      ],
+      "totalAmount": 899,
+      "totalItems": 1,
+      "user": {
+        "id": "edf4",
+        "email": "harry@gmail.com",
+        "password": "Samosa@123#",
+        "addresses": [
+          {
+            "name": "user first ",
+            "email": "userfirst@first.com",
+            "phone": "28374239478",
+            "street": "test addresss ",
+            "city": "new delhi",
+            "state": "delhi",
+            "pinCode": "239874"
+          }
+        ]
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "user first ",
+        "email": "userfirst@first.com",
+        "phone": "28374239478",
+        "street": "test addresss ",
+        "city": "new delhi",
+        "state": "delhi",
+        "pinCode": "239874"
+      },
+      "status": "pending"
+    },
+    {
+      "id": "28fe",
+      "items": [
+        {
+          "id": "507e",
+          "title": "iPhone X",
+          "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+          "price": 899,
+          "discountPercentage": 17.94,
+          "rating": 4.44,
+          "stock": 34,
+          "brand": "Apple",
+          "category": "smartphones",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg",
+          "images": [
+            "https://cdn.dummyjson.com/product-images/2/1.jpg",
+            "https://cdn.dummyjson.com/product-images/2/2.jpg",
+            "https://cdn.dummyjson.com/product-images/2/3.jpg",
+            "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": "edf4"
+        }
+      ],
+      "totalAmount": 899,
+      "totalItems": 1,
+      "user": {
+        "id": "edf4",
+        "email": "harry@gmail.com",
+        "password": "Samosa@123#",
+        "addresses": [
+          {
+            "name": "mr cash ",
+            "email": "cash@gmail.com",
+            "phone": "3987249748",
+            "street": "this is a cash street ",
+            "city": "new delhi",
+            "state": "delhi",
+            "pinCode": "2837423"
+          }
+        ]
+      },
+      "paymentMethod": "card",
       "selectedAddress": null,
       "status": "pending"
     }

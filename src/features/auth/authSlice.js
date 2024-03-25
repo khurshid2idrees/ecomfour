@@ -1,5 +1,7 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-import { CreateUser, checkUser, updateUser } from "./authAPI";
+import { CreateUser, checkUser, signOut } from "./authAPI";
+import { updateUser } from "../user/userAPI";
+
 
 const initialState = {
   loggedInUser: null,
@@ -30,6 +32,13 @@ export const checkUserAsync = createAsyncThunk(
     return response.data;
   }
 );
+export const signOutAsync = createAsyncThunk(
+  "user/signOut",
+  async () => {
+    const response = await signOut();
+    return response.data;
+  }
+);
 
 export const counterSlice = createSlice({
   name: "user",
@@ -37,13 +46,7 @@ export const counterSlice = createSlice({
   reducers: {
     increment: (state) => {
       state.value += 1;
-    },
-    decrement: (state) => {
-      state.value -= 1;
-    },
-    incrementByAmount: (state, action) => {
-      state.value += action.payload;
-    },
+    }
   },
 
   extraReducers: (builder) => {
@@ -72,6 +75,13 @@ export const counterSlice = createSlice({
       .addCase(updateUserAsync.fulfilled, (state, action) => {
         state.status = "idle";
         state.loggedInUser = action.payload;
+      })  
+      .addCase(signOutAsync.pending, (state, action) => {
+        state.status = "idle";
+      })
+      .addCase(signOutAsync.fulfilled, (state, action) => {
+        state.status = "idle";
+        state.loggedInUser = null;
       });
   },
 });
