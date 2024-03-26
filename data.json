@@ -2437,6 +2437,7 @@
       "id": "edf4",
       "email": "harry@gmail.com",
       "password": "Samosa@123#",
+      "role": "user",
       "addresses": [
         {
           "name": "mr cash new",
@@ -2446,17 +2447,15 @@
           "pinCode": "2837423",
           "phone": "3987249748",
           "street": "this is a cash street "
-        },
-        {
-          "name": "user 3",
-          "email": "user@gmil.com",
-          "city": "banglore ",
-          "state": "banglore ",
-          "pinCode": "2389423",
-          "phone": "23987423",
-          "street": "user "
         }
       ]
+    },
+    {
+      "id": "4a93",
+      "email": "admin@gmail.com",
+      "password": "Admin@123#",
+      "addresses": [],
+      "role": "admin"
     }
   ],
   "cart": [],

@@ -11,7 +11,7 @@ export default function UserProfile() {
   const [selectedEditIndex, setSelectedEditIndex] = useState(-1);
   const [showAddAddressForm, setShowAddAddressForm] = useState(false);
 
-// We will add payment section when we work on backend.
+  // We will add payment section when we work on backend.
 
   const {
     register,
@@ -48,11 +48,10 @@ export default function UserProfile() {
   };
 
   const handleAdd = (address) => {
-    const newUser = { ...user, addresses: [...user.addresses,address] }; 
+    const newUser = { ...user, addresses: [...user.addresses, address] };
     dispatch(updateUserAsync(newUser));
     setShowAddAddressForm(false);
   };
-
 
   return (
     <>
@@ -65,6 +64,11 @@ export default function UserProfile() {
             <h3 className="text-xl my-5 font-bold tracking-tight text-red-900">
               Email address : {user.email}
             </h3>
+            {user.role === "admin" && (
+              <h3 className="text-xl my-5 font-bold tracking-tight text-red-900">
+                role : {user.role}
+              </h3>
+            )}
           </div>
 
           <div className="border-t border-gray-200 px-4 py-6 sm:px-6">
